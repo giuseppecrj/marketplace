@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "yarn workspace app dev",
+    "compile": "cd contracts && make build"
+  },
+  "workspaces": [
+    "app",
+    "contracts"
+  ]
+}

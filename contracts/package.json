@@ -1,0 +1,40 @@
+{
+    "name": "contracts",
+    "version": "1.0.0",
+    "description": "Smart Contract starting template",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "files": [
+        "*.sol"
+    ],
+    "scripts": {
+        "lint": "yarn prettier && yarn solhint",
+        "lint:check": "yarn prettier:check && yarn solhint:check",
+        "prettier": "yarn prettier:check --write",
+        "prettier:check": "prettier --check \"src/**/*.sol\"",
+        "solhint": "yarn solhint:check --fix",
+        "solhint:check": "solhint --config ./.solhint.json \"src/**/*.sol\"",
+        "node": "hardhat node",
+        "generate": "hardhat generate",
+        "account": "hardhat account"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.6",
+        "bip39": "^3.0.4",
+        "chai": "^4.2.0",
+        "chalk": "4.1.2",
+        "ethereumjs-util": "^7.1.4",
+        "ethereumjs-wallet": "^1.0.2",
+        "ethers": "^5.6.5",
+        "hardhat": "^2.9.4",
+        "prettier": "^2.6.2",
+        "prettier-plugin-solidity": "^1.0.0-beta.19",
+        "qrcode-terminal": "^0.12.0",
+        "solhint": "^3.3.7",
+        "solhint-plugin-prettier": "^0.0.5"
+    }
+}
